@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0c51f139-ad70-4dcf-8ddf-bb176406d30e" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2mIxdIIqW9oTgmJfeJMilkHPiuf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Aluni.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Mainm.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Maoin.executor&quot;: &quot;Run&quot;,
+    &quot;Application.br.com.empresa.screenmatch.modelos.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.exercicios.ex1.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.exercicios.ex2a1.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.exercicios.ex2l.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.exercicios.ex3.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.exercicios.ex3a2.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.exercicios.ex4.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.exercicios.ex5.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.screenmatch.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Application.exercicios.ex2a1.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercicios.ex2a2.Main" />
+      <module name="Alura" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercicios.ex2a2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercicios.ex4.Main2" />
+      <module name="Alura" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercicios.ex2a2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="exercicios.ex2a1.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercicios.ex2a1.Main" />
+      <module name="Alura" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercicios.ex2a1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="exercicios.ex2a3.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercicios.ex2a3.Main" />
+      <module name="Alura" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercicios.ex2a3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="exercicios.ex2a5.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercicios.ex2a5.Main" />
+      <module name="Alura" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercicios.ex2a5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.exercicios.ex2a1.Main" />
+        <item itemvalue="Application.exercicios.ex2a5.Main" />
+        <item itemvalue="Application.exercicios.ex2a3.Main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0c51f139-ad70-4dcf-8ddf-bb176406d30e" name="Changes" comment="" />
+      <created>1726777980040</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1726777980040</updated>
+    </task>
+    <servers />
+  </component>
+</project>

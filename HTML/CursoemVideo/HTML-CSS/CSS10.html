@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+    
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+      </style>
+</head>
+<body>
+    
+    <h1>Box Model</h1>
+    
+    <p>Em HTML, tudo é exibido em caixas. Uma caixa pode estar dentro da outra, isso é o que chamamos de <strong>aninhamento</strong>. <br>
+        Esta é a caixa do <strong>H1</strong>.</p>
+
+    <img src="img/box.png" alt="box-model">
+
+    <h1>Border</h1>
+
+    <p>Em todas as caixas de conteúdo, podemos traçar uma borda.</p>
+
+    <img src="img/border.png" alt="border">
+
+    <p>A borda fica muito grudada ao conteúdo. Podemos dar uma folga usando o <strong>Padding</strong>.</p>
+
+    <h1>Padding</h1>
+    
+    <p>Espaço entre a borda e o conteúdo.</p>
+
+    <img src="img/padding.png" alt="padding">
+
+    <h1>Margin</h1>
+
+    <p>Caso eu crie outra caixa, a borda dela vai colar com a borda da primeira caixa. Para que isso não aconteça, ussmaos a <strong>Margin</strong>.</p>
+
+    <img src="img/margin.png" alt="margin">
+
+    <h1>Outline</h1>
+
+    <p>Dentro da margem, do lado de fora da borda, temos o <strong>Outline</strong>, que é um contorno da borda.</p>
+    <img src="img/outline.png" alt="outline">
+
+    <h1>Box-Level</h1>
+
+    <p>Um elemento box-level, sempre vai se iniciar em uma nova linha e vai ocupar a largura total do elemento onde ele está contido. Se não estiver contido em nenhuma outra caixa, irá ocupar 100% da largura do 	&lt;body&gt;.</p>
+
+    <img src="img/box-level.png" alt="box-level">
+
+    <p>Tipos de elementos: </p>
+
+    <img src="img/tipo-box.png" alt="tipo-box" width="40%">
+
+    <h1>Inline-Level</h1>
+    <p>Um elemento do tipo inline-level não vai começar em uma nova linha, e sim no ponto exato onde foram definidos. E a largura dele vai ocupar apenas o tamanho relativo ao seu conteúdo.</p>
+
+    <img src="img/inline-level.png" alt="inline-level">
+
+    <p>Tipos de elementos: </p>
+
+    <img src="img/tipo-inline.png" alt="tipo-inline" width="40%">
+
+
+<br>
+
+    ARRUMAR DEPOIS:
+
+    <h1 style="background-color: lightgrey; width: 300px; height: 300px;">Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona: </p>
+    
+    
+    MARGIN AUTO : DEIXA NO MEIO, NAO IMPORTA O TAMANHO DA Tela
+
+    WIDTH STYLE COLOR : border: 10px solid black
+
+    
+    PADDING, MARGIN: 
+    TOP
+    RIGHT
+    BOTTOM
+    LEFT
+    se o valor de todos os lados forem os mesmos, dá pra colocar só um
+    padding: 10px 
+    que ele fica em 10px de todos os lados
+    se colocar 2 valores o TOP e BOTTOM ficam iguais, e RIGHT e LEFT ficam iguais
+
+    tambem da usar valor + AUTO
+    exemplo: margin: 20px auto 40px auto
+
+    <hr>
+    <a href="CSS11.html">Próxima página</a> 
+    <br><br>
+    <a href="CSS9.html">Voltar a página anterior</a>
+</body>
+</html>

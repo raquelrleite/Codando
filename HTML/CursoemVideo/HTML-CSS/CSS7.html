@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+    h1, h2 {font: italic bolder 1.2em arial;}
+    body {font: 1em 'young serif', serif; }
+    </style>
+</head>
+<body> 
+    <H1>Trabalhando em CSS</H1>
+
+    <h2>FONT-FAMILY</h2> 
+    <p style="text-indent: 20px;">Usar a família (Conjunto de três fontes), ao invés de uma só.</p>
+    
+    <h2>FONT-SIZE</h2>
+    <p>Medidas Absolutas <br>
+    cm, mm, in, px, ponto(pt) <br><br>
+    
+    Medidas Relativas <br>
+    em(relativa ao M maísculo de uma letra), ex(relativa ao tamanho x), rem (root), vw, vh(view-height), % <br><br>
+    
+    Os mais recomendados são EM e PX <br><br>
+    
+    16px = 1em</p>
+    
+    <h2>FONT-WEIGHT</h2> 
+    <p>Lighter, normal, bold, bolder</p>
+    
+    <h2>FONT-STYLE</h2> 
+    <p>Normal, italic, oblique, initial, inherit <br>
+    Aqui muda apenas a aparência, não a importância do texto</p>
+        
+    <h2>TEXT-DECORATION</h2> 
+    <p>Line-through, overline, underline</p>
+    
+    <h2>SHORT-HAND FONT</h2> 
+    <p>Ao invés de usar o padrão: <br>
+        <pre>
+            <code>
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 1em;
+    font-weight: normal; 
+    font-style: oblique; 
+    text-decoration: underline; 
+            </code>
+        </pre>
+           
+    Tem a posibilidade de usar em uma só linha, mas nessa ordem exata: <br>
+    font-style -> font-weight -> font-size -> font-family</p>
+    
+    <h2>IMPORT</h2>
+    <p>Também tem a possibilidade de importar uma letra a partir do google fonts (ou outros), é só colocar o código em style e chamar onde quer a fonte depois.</p>
+
+    <p>Também tem o FONT FACE, quando por ex o cliente te entrega o arquivo da fonte que vai ser usada ou quando vc baixa o arquivo da fonte em um site. Pesquisa pq nao entendi direito.
+
+    <pre>
+       <code> 
+        @font-face {
+        font-family:*nomedafamily*; 
+        scr: url(pasta/'nomedafonte.tipo') format('opentype'),  <!--tem vários tipos de format-->
+        url ('pasta/nomedoarquivo.outrotipo') format('truetype'); } <!-- Se tiver em uma pasta dentro de uma pasta, é só colocar > ../ < -->
+        </code>
+    </pre>
+
+    <h2>TEXT-INDENT</h2>
+        <P>Dá pra colocar um espaço antes do ínicio do parágrafo.</P>
+
+        <hr>
+        <a href="CSS8.html">Próxima página</a> 
+        <br><br>
+        <a href="CSS6.html">Voltar a página anterior</a>
+</body>
+</html>

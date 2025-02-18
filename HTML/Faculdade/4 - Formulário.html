@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="">
+        <br><br>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" placeholder="Digite seu nome" size="50" maxlength="50"> <!-- Tipo texto,  Placeholder é o textinho mostrando que deve ser feito, caixinha tamanho 50, max de 50 caracteres-->
+        <br><br>
+        <label for="senha">Senha:</label>
+        <input type="text" type="password" name="senha" size="10" maxlength="8">
+        <br><br><br>
+        <fieldset>
+            <label for="linguagem">Linguagem que tem interesse:</label>
+            <br><br>
+            <input type="checkbox" name="Linguagem[]" value="C++">C++
+            <input type="checkbox" name="Linguagem[]" value="Java">Java
+            <input type="checkbox" name="Linguagem[]" value="PHP">PHP
+        </fieldset>
+        <br>
+        <label for="linguagemescolhida">Linguagem que irá cursar agora</label>
+        <br><br>
+        <input type="radio" name="curso" value="C++">C++
+        <input type="radio" name="curso" value="Java">Java
+        <input type="radio" name="curso" value="PHP"> PHP
+       <br><br>
+        <select name="escola">
+            <option value="C#">C#</option>
+            <option value="Ruby">Ruby</option>
+            <option value="Python">Python</option>
+        </select>
+        <br><br>
+        <input type="submit" name="submit" id="submit" value="Enviar">
+</body>
+</html>

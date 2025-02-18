@@ -1,0 +1,16 @@
+@charset "UTF-8"; /* Obrigatório */
+
+h1 { /* No arquivo CSS, não é necessário colocar a tag style */
+font-family: Helvetica;
+color: blue;
+background-color: coral;
+}
+h2 {
+    font-family: cursive, 'Times New Roman';
+    color:blueviolet;
+    background-color: burlywood;
+}
+body {
+    background-color: bisque;
+    font-family:Verdana;
+}

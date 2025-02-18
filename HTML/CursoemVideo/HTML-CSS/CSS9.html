@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        body{   
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #d1{ /* Atibui box lado a lado, cor roxa, borda, alinhamento do texto, altura e largura da div d1 */
+            display: inline-block;
+            /* Especifica o comportamento de exibição de um elemento   */
+            background-color: rgb(188, 156, 204);
+            border: 2px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+
+        #d1:hover{  /* Atribui a cor amarela ao hover (passar o mouse em cima) */
+            background-color: yellow;
+        }
+
+        .surprise > p { /* Esconde o parágrafo da div surprise */
+            display: none;
+        }
+        .surprise:hover > p { /*  Mostra o parágrafo escondido e atruibui a cor vermelha */
+            display: block;
+            color: red;
+        }
+
+        a { /* Atruibuindo estilo aos links */
+            color: green;
+            text-decoration: none; /* Tirando o texto sublinhado */
+            font-weight: bold;
+        }
+
+        a:visited { /* Quando visitar o link, muda a cor pra brown */
+            color:brown;
+        }
+
+        a:active{ /* Quando clico com o mouse fica amarelo */
+            color:yellow;
+        }
+        a:hover { /* Quando passo o mouse por cima, fica preto */
+            color: black;
+            text-decoration: underline;
+        }
+
+        a::before{ /* Antes do link */
+            content: 'Ώ '
+        }
+        a::after{ /*  Depois do link */
+            content: ' Δ'
+        }
+
+    </style>
+</head>
+<body>
+    <h1>O que é Pseudo-classe?</h1>
+    <p> : = Pseudo-classe, que precisa estar relacionada a um elemento ou classe. É relacionada há o estado de um determinado elemento. Exemplo: </p>
+        <pre>
+        <code> 
+            div:hover{
+            background-color: yellow 
+            }</code> 
+        </pre>
+
+    <h1>Exemplo de HOVER</h1>
+    <P>Passe o mouse sobre o background abaixo:</P>
+    <div id="d1">01</div>
+    <div id="d1">02</div>
+   
+    <h1>Exemplo de PARÁGRAFO ESCONDIDO</h1>
+    <div class="surprise">
+        Passe o mouse aqui para ver a surpresa.
+        <p>MANDA PIX!</p>
+    </div>
+
+    <h1>Personalizando links</h1>
+    <ul> 
+        <li><a href="https://youtu.be/pRfmrE0ToTo?si=aD2RXT7473Z2y2zy" target="_blank" rel="external">Rewrite The Stars</a></li>
+        <li><a href="https://youtu.be/Fp_P_e1cPOE?si=yE9aSlA0Ss63Ah9O" target="_blank" rel="external">Shameless</a></li>
+        <li><a href="https://youtu.be/XjwZAa2EjKA?si=vOHQypHdPAa_DvuX" target="_blank" rel="external">Unconditionally</a></li>
+    </ul>
+
+    <hr>
+    <a href="CSS10.html">Próxima página</a> 
+    <br><br>
+    <a href="CSS8.html">Voltar a página anterior</a>
+</body>
+</html>

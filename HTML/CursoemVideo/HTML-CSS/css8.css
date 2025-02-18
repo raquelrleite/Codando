@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+
+
+/* Em HTML é ID = em CSS é #. 
+    O ID pode ser atribuido apenas a um elemento. 
+
+    Pode ser usado mas de um seletor por vez, mas caso use ID e CLASS, o ID se sobressai
+
+   Em HTML é CLASS = em CSS é . 
+    CLASS pode ser atribuido a múltiplos elementos.
+    Dê nome pela funcionalidade
+
+    : = Pseudo-class
+
+    :: = Pseudo-element
+
+    > = Children (parágrafo)
+
+
+*/
+
+body{ 
+    background-image: linear-gradient(to right,#d9c5b2, #d7a57ae0 );
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+h1{ 
+    text-align: center;
+    color: rgb(110, 81, 7); 
+}
+
+#tprincipal { 
+    color: rgb(85, 0, 255);
+    text-align: center;
+    background-color: chocolate;
+}
+
+.basico{
+    background-color: tomato;
+}
+.intermediario{
+    background-color: rgb(71, 255, 95);
+}
+.avancado{
+    background-color: rgb(129, 71, 255);
+}
+
+h2{
+    color: rgb(1, 81, 24); 
+    text-align: center;
+}
+
+.destaque{
+    color: rgb(214, 8, 59);
+
+}

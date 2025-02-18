@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="" method=""> <!-- AINDA NAO SEI-->
+        <table>
+            <tr>
+                <th><label for="nome">Nome:</label></th> <!-- Adiciona um rótulo-->
+                <td><input type="text" name="nome" id="nome"></td>
+                <!-- Campo de entrada para escrever texto de linha única-->
+            </tr>
+            <tr>
+                <th><label for="email">E-mail:</label></th>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <th><label for="msg">Digite sua mensagem:</label></th>
+                <td><textarea name="msg" cols="40" rows="5">Digite sua mensagem:</textarea></td>
+                <!--Cria uma caixa de texto para usuário digitar-->
+            </tr>
+            <tr>
+                <th><label for="horario">Turno disponível:</label></th>
+                <td><input type="radio">Manhã</td> <!--Botão de opção, seleciona apenas uma opção-->
+                <td><input type="radio">Tarde</td>
+                <td><input type="radio">Noite</td>
+                <td><input type="radio">Madrugada</td>
+            </tr>
+            <tr>
+                <th><label for="local">Cidade:</label></th>
+                <td><input type="checkbox">São Paulo</td> <!-- Checkbox, seleciona zero ou várias opções-->
+                <td><input type="checkbox">Rio de Janeiro</td>
+            </tr>
+            <tr>
+                <th><label for="data">Data:</label></th>
+                <select name="data">  <!--Cria uma caixa de seleção suspensa-->
+                    <option value="Outubro">Outubro</option>
+                    <option value="Novembro">Novembro</option>
+                    <option value="Dezembro">Dezembro</option>
+                </select>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button>Enviar</button></td> <!-- Botão clicável-->
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
