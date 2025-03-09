@@ -1,0 +1,42 @@
+#Cartão de crédito
+    - Adicionar cartão
+    - Nome do Banco
+    - Data de fechamento
+    - Data de vencimento
+    - Limite
+    - Bandeira
+
+ #Despesas
+    - Descrição da compra
+    - Valor da compra
+    - Data da compra
+    - Categoria (opcional)
+    - Cashback
+    - Parcelamento
+    - Recorrente
+    - Dono da divida
+    - Forma de pagamento
+
+#Pagamento:
+    - Pix
+    - Dinheiro
+    - Boleto
+    - Anexo de imagem (opcional)
+
+ #Ordem:
+        - Data
+        - Alfabética
+        - Valor crescente
+        - Valor decrescente
+
+#Lista de devedores:
+    - Separar por cartão que está devendo
+    - O que está devendo
+    - Quanto está devendo
+    - Data que pagou
+    - Forma de pagamento
+    - Anexo de imagem (opcional)
+
+ #Calculadora
+ #Investimento
+ #Nome do APP
