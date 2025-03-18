@@ -1,61 +1,59 @@
 package jwfhdjl;
 
-import java.time.LocalDate;
-import java.time.YearMonth;
-import java.time.format.DateTimeFormatter;
-
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
+
         Scanner sc = new Scanner(System.in);
 
-        Department department = new Department();
-        Worker worker= new Worker();
-        WorkerLevel level = WorkerLevel.MID_LEVEL;
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
         System.out.print("Enter department's name: ");
-        department.name = sc.nextLine(); sc.next();
+        String departmentName = sc.nextLine();
 
         System.out.println("Enter worker data: ");
         System.out.print("Name: ");
-        worker.name = sc.nextLine(); sc.next();
-        System.out.println("Level: " + worker.level);
-        System.out.println("Base salary: ");
-        worker.baseSalary = sc.nextDouble();
+        String workerName = sc.nextLine();
+        System.out.print("Level: " );
+        String workerLevel = sc.nextLine();
+        System.out.print("Base salary: ");
+        double baseSalary = sc.nextDouble();
+
+        Worker worker = new Worker(workerName, WorkerLevel.valueOf(workerLevel), baseSalary,new Department(departmentName));
 
         System.out.print("How many contracts to this worker? ");
-        int contracts = sc.nextInt();
+        int n = sc.nextInt();
 
-        for (int i = 0; i < contracts; i++) {
+        for (int i = 0; i < n; i++) {
             System.out.println("Enter contract #" + (i +1));
-            HourContract hourContract = new HourContract();
             System.out.print("Date (DD/MM/YYYY): ");
-            String data = sc.nextLine();
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-            hourContract.date = LocalDate.parse(data, formatter);
+            Date contractDate = sdf.parse(sc.next());
             System.out.print("Value per hour: ");
-            hourContract.valuePerHour = sc.nextDouble();
+            double valuePerHour = sc.nextDouble();
             System.out.print("Duration: ");
-            hourContract.hours = sc.nextInt();
+            int hours = sc.nextInt();
+
+            HourContract contract = new HourContract(contractDate, valuePerHour, hours);
+            worker.addContract(contract);
         }
 
         System.out.println();
         System.out.print("Enter month and year to calculate income (MM/YYYY):  ");
-        String data = sc.nextLine();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/yyyy");
-        YearMonth data1 = YearMonth.parse(data, formatter);
-
-        System.out.println(worker.name);
-        System.out.println(department.name);
-        System.out.print("Income for " + data + ": ");
-        System.out.println(income);
+        String monthAndYear = sc.next();
+        int month = Integer.parseInt(monthAndYear.substring(0, 1));
+        int year = Integer.parseInt(monthAndYear.substring(3));
 
 
+        System.out.println("Name: " + worker.getName());
+        System.out.println("Department: " + worker.getDepartment().getName());
+        System.out.print("Income for " + monthAndYear + ": " + String.format("%.2f", worker.income(year, month)));
 
 
-
-
+        sc.close();
 
     }
 }

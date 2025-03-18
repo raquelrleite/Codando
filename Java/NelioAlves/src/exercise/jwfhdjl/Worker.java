@@ -35,12 +35,12 @@ public class Worker {
         for (HourContract c : contracts){
             cal.setTime(c.getDate());
             int c_year = cal.get(Calendar.YEAR);
-            int c_month =  1 + cal.get(Calendar.MONTH);
+            int c_month = 1 + cal.get(Calendar.MONTH);
             if (year == c_year && month == c_month){
                 sum += c.totalValue();
             }
         }
-        return year //SÓ PRA PARAR DE ENCHER MEU SACO;
+        return sum;
     }
 
     public String getName() {
