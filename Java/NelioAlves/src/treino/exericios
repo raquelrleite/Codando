@@ -1,0 +1,47 @@
+Exercícios para Treino
+🟢 Fácil
+Crie uma classe Student que tenha os seguintes atributos:
+
+name (nome do estudante)
+grade1, grade2, grade3 (três notas do estudante)
+E um método finalGrade() que retorna a soma das três notas.
+Caso a nota final seja menor que 60, exiba "FAILED" e mostre quantos pontos faltam para atingir 60.
+Caso contrário, exiba "PASS".
+📌 Dica: Use System.out.printf("%.2f", valor) para exibir valores decimais formatados.
+
+🟡 Médio
+Crie um programa para uma locadora de carros.
+Você deve ter:
+
+Classe CarRental com:
+model (modelo do carro)
+rentalDate (data de aluguel)
+returnDate (data de devolução)
+Classe RentalService com:
+pricePerDay (preço por dia)
+pricePerHour (preço por hora)
+invoice(CarRental rental): Método que calcula o valor total do aluguel.
+Se o aluguel for menor que 12 horas, cobra por hora. Se for maior, cobra por dia.
+📌 Dica: Use SimpleDateFormat para manipular datas.
+
+🔴 Difícil
+Crie um sistema de pedidos para uma loja.
+
+Classe Product com:
+name
+price
+Classe OrderItem com:
+quantity
+product (associado a um Product)
+Método subTotal() que calcula quantity * product.price
+Enum OrderStatus com:
+PENDING_PAYMENT
+PROCESSING
+SHIPPED
+DELIVERED
+Classe Order com:
+date
+status
+List<OrderItem>
+Método total() que calcula o valor total do pedido.
+📌 Desafio: Peça ao usuário para inserir produtos e quantidades, depois exiba o total do pedido.
