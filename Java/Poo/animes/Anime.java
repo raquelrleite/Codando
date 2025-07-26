@@ -1,6 +1,5 @@
-package POO.animes;
 // Declaração de uma classe chamada Anime no pacote Poo
-
+package animes;
 public class Anime{
 
     // Campos públicos representando atributos de um personagem de anime

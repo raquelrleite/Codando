@@ -1,6 +1,5 @@
-package POO.animes;
 // Importa a classe Anime do pacote animes
-
+import animes.Anime;
 import java.util.Scanner;
 
 // Classe principal chamada Characters
