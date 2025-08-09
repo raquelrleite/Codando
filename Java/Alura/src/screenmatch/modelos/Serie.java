@@ -53,12 +53,12 @@ public class Serie extends Titulo {
     public String toString() {
         return
                 "Nome: " + getNome() +
-                " (" + getAnoDeLancamento() + ")\n" +
-                "Temporadas: " + temporadas + "\n" +
-                "Episódios por temporada: " + episodiosPorTemporada + "\n" +
-                "Minutos por episódio: " + minutosPorEpisodio + "\n" +
-                "Ativa: " + (ativa ? "Sim" : "Não") + "\n" +
-                "Duração em minutos: " + getDuracaoEmMinutos() + "\n" +
-                "Incluído no plano: " + (isIncluidoNoPlano() ? "Sim" : "Não");
+                        " (" + getAnoDeLancamento() + ")\n" +
+                        "Temporadas: " + temporadas + "\n" +
+                        "Episódios por temporada: " + episodiosPorTemporada + "\n" +
+                        "Minutos por episódio: " + minutosPorEpisodio + "\n" +
+                        "Ativa: " + (ativa ? "Sim" : "Não") + "\n" +
+                        "Duração em minutos: " + getDuracaoEmMinutos() + "\n" +
+                        "Incluído no plano: " + (isIncluidoNoPlano() ? "Sim" : "Não");
     }
 }

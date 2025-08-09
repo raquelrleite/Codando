@@ -5,8 +5,11 @@ import screenmatch.calculos.FiltroRecomendacao;
 import screenmatch.modelos.Episodio;
 import screenmatch.modelos.Filme;
 import screenmatch.modelos.Serie;
+import screenmatch.modelos.Titulo;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class Principal {
     public static void main(String[] args) {
@@ -22,9 +25,9 @@ public class Principal {
         oPoderosoChefao.avalia(8);
         oPoderosoChefao.avalia(5);
         oPoderosoChefao.avalia(10);
-//        System.out.println("Total de avaliações: " + oPoderosoChefao.getTotalDeAvaliacoes());
+        //        System.out.println("Total de avaliações: " + oPoderosoChefao.getTotalDeAvaliacoes());
 
-//        System.out.println(oPoderosoChefao.pegaMedia());
+        //        System.out.println(oPoderosoChefao.pegaMedia());
 
         System.out.println();
 
@@ -33,8 +36,8 @@ public class Principal {
 
         System.out.println();
 
-        Filme twilight = new Filme("Twilight", 2010, 220, true);
-//        twilight.exibeFichaTecnica();
+        Filme twilight = new Filme("Twilight", 1800, 220, true);
+        //        twilight.exibeFichaTecnica();
         System.out.println(twilight);
 
         System.out.println();
@@ -42,7 +45,7 @@ public class Principal {
         CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
         calculadora.inclui(oPoderosoChefao);
         calculadora.inclui(twilight);
-       calculadora.inclui(lost);
+        calculadora.inclui(lost);
 
         System.out.printf("Tempo para maratonar: %d minutos.", calculadora.getTempoTotal());
         System.out.println("\n");
@@ -54,7 +57,7 @@ public class Principal {
         Episodio episodio = new Episodio();
         episodio.setNome("Piloto");
         episodio.setNumero(1);
-       episodio.setSerie(lost);
+        episodio.setSerie(lost);
         episodio.setTotalVisualizacoes(457);
 
         FiltroRecomendacao filtro1 = new FiltroRecomendacao();
@@ -72,13 +75,18 @@ public class Principal {
 
         System.out.println("Tamanho da lista: " + listaDeFilmes.size());
         System.out.println("1º filme da lista: " + listaDeFilmes.get(0).getNome());
-        System.out.println("ToString: " + listaDeFilmes.get(0).toString());
-
-        System.out.println("Lista de filmes: " + listaDeFilmes);
-
+        System.out.println("/////");
+        System.out.println("Lista de filmes: " + listaDeFilmes); // Funcionou por conta do ToString, imprime normal
+        System.out.println("/////");
         System.out.println();
 
+        Collections.sort(listaDeFilmes);
 
+        System.out.println("Ordenando de A-Z: " + listaDeFilmes);
+        System.out.println();
+        listaDeFilmes.sort(Comparator.comparing(Titulo::getAnoDeLancamento));
 
+        System.out.println("Ordenando por ano: " + listaDeFilmes);
+        System.out.println();
     }
 }
