@@ -1,4 +1,4 @@
-package screenmatch.principal;
+package exercicioAPI;
 
 import java.io.IOException;
 import java.net.URI;
@@ -7,15 +7,15 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.Scanner;
 
-public class PrincipalComBusca {
+public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
-        Scanner sc = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
-        System.out.print("Digite um filme para busca: ");
+        System.out.print("Digite um livro para busca: ");
 
-        var busca = sc.nextLine();
+        var titulo = input.nextLine();
 
-        var endereco = "https://www.omdbapi.com/?t=" + busca + "&apikey=9ff52077";
+        var endereco = "https://www.googleapis.com/books/v1/volumes?q=" + titulo + "&key=AIzaSyADmaAU3hG1dRJUticuG3bnqb3rcfFWZps";
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
