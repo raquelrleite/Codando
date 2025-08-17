@@ -9,42 +9,34 @@ import java.time.format.DateTimeFormatter;
 public class Main {
     public static void main(String[] args) {
 
-        DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        LocalDate date1 = LocalDate.now();
+        LocalDateTime date2 = LocalDateTime.now();
+        Instant date3 = Instant.now(); // Horário de Londres
+        LocalDate date4 = LocalDate.parse("2025-12-25");
+        LocalDateTime date5 = LocalDateTime.parse("2025-12-22T08:30");  //Segundos não obrigatório
 
-        LocalDate d01 = LocalDate.now();
-        LocalDateTime d02 = LocalDateTime.now();
-        Instant d03 = Instant.now();
+        Instant date6 = Instant.parse("2025-12-24T08:30:42Z");
+        Instant date7 = Instant.parse("2025-12-24T08:30:42-03:00"); //-3, timezone de sp
+        DateTimeFormatter datezinho = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        LocalDate date8 = LocalDate.parse("20/07/2025", datezinho);
+        LocalDateTime date9 = LocalDateTime.parse("21/07/2025 01:30",  DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm")); //Da pra fazer assim ao inves de criar outro.
+        LocalDate date10 = LocalDate.of(2025, 8, 22);
 
-        LocalDate d04 = LocalDate.parse("2000-04-04");
-        LocalDateTime d05 = LocalDateTime.parse("2000-04-04T11:00:14");
-        Instant d06 = Instant.parse("2000-04-04T11:00:14-03:00");
-
-        LocalDate d07 = LocalDate.parse("19/12/2017", fmt);
-        LocalDate d08 = LocalDate.of(2017,04,01);
-        LocalDateTime d09 = LocalDateTime.of(2017,04,01,20,00);
-
-        System.out.println(d01);
-        System.out.println(d02);
-        System.out.println(d03);
-        System.out.println(d04);
-        System.out.println(d05);
-        System.out.println(d06);
-        System.out.println(d07);
-        System.out.println(d08);
-        System.out.println(d09);
-
-        DateTimeFormatter fmt1 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
-        LocalDateTime d010 = LocalDateTime.parse("2000-04-04T20:00");
-        System.out.println(d010.format(fmt1));
+        System.out.println("Date1: " + date1);
+        System.out.println("Date2: " + date2);
+        System.out.println("Date3: " + date3);
+        System.out.println("Date4: " + date4);
+        System.out.println("Date5: " + date5);
+        System.out.println("Date6: " + date6);
+        System.out.println("Date7: " + date7);
+        System.out.println("Date8: " + date8);
+        System.out.println("Date9: " + date9);
+        System.out.println("Date10: " + date10);
 
 
-        DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm").withZone(ZoneId.systemDefault());
-        Instant d11 = Instant.parse("2000-04-04T20:00:26Z");
-        System.out.println(fmt2.format(d11));
 
 
-        Instant instant = Instant.now();
-        System.out.println(instant);
+
 
 
 
