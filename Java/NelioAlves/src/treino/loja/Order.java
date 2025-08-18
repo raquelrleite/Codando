@@ -1,3 +1,4 @@
+/*
 package treino.loja;
 
 import java.util.ArrayList;
@@ -44,3 +45,4 @@ public class Order {
         this.status = status;
     }
 }
+*/
