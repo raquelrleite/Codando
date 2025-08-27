@@ -1,6 +1,6 @@
 package versaoNelio;
 
-public class Account {
+public class Account extends Exception {
 
     private int number;
     private String holder;
